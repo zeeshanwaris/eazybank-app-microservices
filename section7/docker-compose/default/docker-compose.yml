@@ -34,6 +34,12 @@ services:
     container_name: configserver-ms
     ports:
       - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 1000s
+      retries: 200
+      start_period: 1000s
     extends:
       file: common-config.yml
       service: microservice-base-config

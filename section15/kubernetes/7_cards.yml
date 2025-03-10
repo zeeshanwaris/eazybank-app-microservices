@@ -49,6 +49,7 @@ spec:
   selector:
     app: cards
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 9000

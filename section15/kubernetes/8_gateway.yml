@@ -54,6 +54,7 @@ spec:
   selector:
     app: gatewayserver
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 8072

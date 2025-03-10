@@ -49,6 +49,7 @@ spec:
   selector:
     app: loans
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 8090

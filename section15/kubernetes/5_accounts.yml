@@ -49,6 +49,7 @@ spec:
   selector:
     app: accounts
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 8080

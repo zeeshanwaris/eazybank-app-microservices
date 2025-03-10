@@ -28,6 +28,7 @@ spec:
   selector:
     app: configserver
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 8071

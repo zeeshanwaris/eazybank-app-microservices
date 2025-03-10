@@ -39,6 +39,7 @@ spec:
   selector:
     app: eurekaserver
   type: LoadBalancer
+  externalTrafficPolicy: Local
   ports:
     - protocol: TCP
       port: 8070
